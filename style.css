@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    font-size:15px;
+    background-color:#151515;
+}
+
+
+
+
+
+
+
+/*-----------------------NAVBAR------------------------*/
+
+
+
+
+
+.container-fluid{
+    position: relative;
+    height:70px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    background-color: black;
+    width:100%;
+    
+}
+.logo{
+    font-family: 'Sen',sans-serif;
+    font-weight: 800;
+    padding-right:70px;
+    color:#4dbf00;
+    padding-left:50px;
+    font-size:40px;
+    margin-left:20px;
+
+
+
+    
+}
+.navbar-nav{
+    margin-top:50px;
+}
+.custom-font-size {
+    font-size: 7.2rem; /* Adjust the font size as needed */
+}
+
+.active{
+    margin-left:100px;
+    font-size:55px;
+}
+.nav-link{
+    font-size:18px;
+}
+.sidenav{
+    padding-top:100px;
+    position:fixed;
+    z-index:5;
+    left:0;
+    width:70px;
+    top:0;
+    height:100%;
+    background-color: black;
+    gap:20px;
+}
+.nav-item{
+    margin-bottom:50px;
+    font-size:30px;
+    color:white;
+}
+
+
+.nav-item{
+    list-style: none;
+    padding-right:40px;
+}
+.nav-item .nav-link{
+    color:white;
+}
+.profile{
+    position:absolute;
+    right:0;
+    display:flex;
+    margin-right:20px;
+    gap:20px;
+    align-items:center;
+}
+.profile img{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+    left:0;
+    margin-right:8px;
+}
+.navbar-toggler-icon{
+        background-color:black;
+    color:white;
+}
+.profilet{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin-left:0;
+}
+.profilet p{
+    margin-top:14px;
+    
+    color:white;
+    font-size: 20px;
+}
+.fa-chevron-down{
+margin-left:10px;
+margin-bottom: 3px;
+}
+.color{
+    background-color: white;
+    width:40px;
+    border-radius:10px;
+    align-items: center;
+    justify-content: center;
+    padding-top:1px;
+    padding-right:3px;
+    padding-left:2px;
+    position:relative;
+    
+}
+.fa-sun{
+    position:absolute;
+    right:0px;
+    margin-top:4px;
+    margin-right:3px;
+    color:gold;
+}
+.fa-moon{
+    left:0;
+    color:gold;
+}
+.cercle{
+    
+    content:"";
+    position:absolute;
+    background-color: black;
+    width:21px;
+    height:21px;
+    border-radius:10px;
+    right:0;
+    top:1px;
+    bottom:0;
+}
+
+
+
+
+/*******************************Content**************************************/
+.content-container{
+    height:70vh;
+    position:relative;
+    width:100%;
+    margin-bottom:20px;
+
+}
+.featured-content {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('./images/redead.jpg');
+    background-size: cover; /* Make the background image cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 100%;
+    width: 100%;
+    display: relative;
+    margin-bottom:50px;
+
+}
+
+
+.content-container .featured-content .text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 9999;
+    width: 600px; /* Set width and height as needed */
+    height: 200px;
+    display:inline-block;
+}
+
+
+
+
+p.description{
+    color:rgb(240, 240, 240);
+    font-size:18px;
+    font-weight: 700;
+    width:550px;
+    
+
+}
+.buy{
+    margin-top:20px;
+    width: 120px;
+    border-radius:10px;
+    background:#fcc93e;
+    font-size: 15px;
+    color:white;
+    font-weight: 900px;
+    padding:10px;
+}
+.container-flui{
+    margin-left:55px;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.newreleaselist{
+    display:flex;
+    align-items: center;
+}
+.newrelease{
+    margin:0 15px;
+    color:white
+}
+.fa-greater-than{
+    font-size:15px;
+    color:white;
+    margin-top:5px;
+}
+
+/* NEWWWWWWWWWWWWWWWWW RELEEEEEEEEEEEEEEEEEEEEEEEEEASE */
+.game-list-container{
+    padding-left:50px;
+}
+.game-list-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom:50px;
+}
+.newlist {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    margin-left: 50px;
+    padding-bottom: 20px; /* Optional: Add padding to the bottom for better appearance */
+    gap: 20px;
+    padding-top: 10px;
+    padding-right:20px;
+    transform:translateX(0);
+    transition:all ease-out 0.8s;
+}
+
+.game-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    padding-right:20px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    text-align: center;
+}
+.prize{
+    text-decoration: line-through;
+    color: gray;
+    margin-right:10px;
+}
+
+
+.game-list-item img {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.newrelease {
+    color: white;
+}
+.newreleaselist{
+    margin-bottom: 15px;
+}
+
+.fa-greater-than {
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+ h1.name{
+    font-size: 20px;
+}
+h1.price{
+    font-size: 20px;
+}
+.game-list-item:hover .gameimg{
+    transform: scale(1.009);
+    border: solid 0.001px white;
+    opacity:0.8;
+
+}
+.arrow{
+    position:absolute;
+    right:0%;
+    top:25%;
+    font-size: 70px;
+    cursor:pointer;
+}
+
+.featured-content-2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #2c2a2a), url('./images/eldenringcov.jpg');
+    background-size: cover; /* Make the background image cover the entire container */
+    background-position: center; /* Center the background image */
+    margin-bottom:20px;
+    
+}
+.featured-content-2 .text p{
+    color:black;
+}
+
+.featured-content-3 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #0d0d0d), url('./images/cyber.jpg');
+}
+.featured-content-3 .text p{
+    color:black;
+
+}
+
+
+
+
+.yo.lol{
+    background-color:white ;
+    color:red;
+}
+.navbar.activ {
+    background-color: white;
+  
+    color: black;
+  }
+  .nav-link{color:black;}
+  .newrelease.activ{
+    color:black;
+  }
+  
+  .sidenav.activ{
+      background-color: white;
+  }
+  
+  .nav-item.activ{
+      color: black;
+  }
+  
+.color.activ{
+      background-color: black;
+  }
+  
+.cercle.activ{
+      background-color: white;
+      transform: translateX(-20px);
+  }
+.profilet.activ , .pro.activ{
+    color:black;
+}
+.fa-greater-than.activ ,.name.activ,.price.activ{
+    color:black;
+
+}
+
+  
+  @media only screen and (max-width: 940px){
+      .menu-container{
+         display: none;
+      }
+    }
+
+
+
+
+
+
+
+
+
+h5,
+.footer p {
+    font-weight: 400;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    z-index:99 !important;
+    background-color:black;
+    color: red;
+    text-align: center;
+    padding: 20px 0;
+    left:0;
+    right:0;
+}
+
+
+
+ul.list-unstyled li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul.list-unstyled li a:hover {
+    text-decoration: underline;
+}
+
